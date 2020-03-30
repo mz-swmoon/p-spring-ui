@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: PSpringUI
+
+server:
+  port: ${PORT:8080}
+
+##datasource:
+uri:
+  gateway: http://gateway-99bc92bf-92f4-4969-9eb9-2577de9ee86b.apps.cf.martin-bw-piv.net/api
+  registry: http://PSPRINGAPI
+

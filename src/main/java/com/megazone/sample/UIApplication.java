@@ -1,4 +1,4 @@
-package com.megazone;
+package com.megazone.sample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

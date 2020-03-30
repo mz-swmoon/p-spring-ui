@@ -4,13 +4,14 @@ plugins {
 	id 'java'
 }
 
-group = 'com.example'
+group = 'p-spring'
 sourceCompatibility = '1.8'
 
+apply plugin: 'war'
 
-
-jar {
+war {
 	baseName = 'p-spring-ui'
+	version "$version"
 }
 
 repositories {
@@ -29,8 +30,15 @@ dependencies {
 	implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry'
 	implementation 'io.pivotal.spring.cloud:spring-cloud-services-starter-config-client'
 
+
+
 	implementation('org.springframework.boot:spring-boot-starter-actuator')
 	implementation "javax.servlet:jstl"
+
+	compile "com.google.code.gson:gson:2.8.5"
+
+	compile 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.33'
+
 
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {

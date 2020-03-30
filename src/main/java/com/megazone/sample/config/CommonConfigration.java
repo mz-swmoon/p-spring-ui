@@ -1,4 +1,4 @@
-package com.megazone;
+package com.megazone.sample.config;
 
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;

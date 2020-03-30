@@ -1,0 +1,9 @@
+---
+applications:
+- name: pspring_ui
+  memory: 1024M
+  instances: 1
+  buildpack: java_buildpack_offline
+  path: ./build/libs/p-spring-ui.war
+  env:
+    uri.gateway: http://gateway-99bc92bf-92f4-4969-9eb9-2577de9ee86b.apps.cf.martin-bw-piv.net/api
