@@ -6,4 +6,5 @@ applications:
   buildpack: java_buildpack_offline
   path: ./build/libs/p-spring-ui.war
   env:
-    uri.gateway: http://gateway-99bc92bf-92f4-4969-9eb9-2577de9ee86b.apps.cf.martin-bw-piv.net/api
+    spring_profiles_active: cloud #config 서버 연동시 주석 해제
+    uri_gateway: http://gateway_url/api/g/users
