@@ -17,3 +17,6 @@ uri:
   gateway: http://gateway_url/api
   registry: http://PSPRINGAPI
 
+
+
+management.endpoints.web.exposure.include: "refresh"
